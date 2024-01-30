@@ -3,7 +3,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-image: url('/images/Background-introduction.jpg');
+    background-image: url('images/Background-introduction.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -216,7 +216,7 @@ animation01
     margin: 0 auto;
     width: 50%;
     height: 100%;
-    background-image: url('/images/Logo-white.svg');
+    background-image: url('images/Logo-white.svg');
     background-repeat: no-repeat;
     background-size: contain;
     transform-origin: bottom;

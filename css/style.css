@@ -10,7 +10,7 @@ body {
 }
 
 body {
-  background-image: url(/images/Background-image.jpg);
+  background-image: url(images/Background-image.jpg);
   background-size: cover;
   background-position: 100% 97%;
   background-repeat: no-repeat;
@@ -18,7 +18,7 @@ body {
 }
 
 .main-section {
-  background-image: url(/images/introduction-graphic-white-background.svg);
+  background-image: url(images/introduction-graphic-white-background.svg);
   background-size: 51%;
   background-position: 110% 97%;
   background-repeat: no-repeat;
