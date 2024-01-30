@@ -8,7 +8,7 @@ const introductionSection = document.querySelector('.introduction-section');
 setTimeout(() => {
   words.parentNode.removeChild(words);
   const img = document.createElement('img');
-  img.src = '/images/introduction-graphic-white.svg';
+  img.src = '../images/introduction-graphic-white.svg';
   img.alt = 'Introduction Graphic';
   img.classList.add('introduction-graphic-setting');
   const animation02 = document.querySelector('.name');
