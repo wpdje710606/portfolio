@@ -1,0 +1,81 @@
+.contact-form-setting,
+.contact-form-setting:focus-visible,
+.contact-form-setting:focus {
+    width: 48%;
+    float: left;
+    margin-bottom: 2rem;
+    border: none;
+    border-bottom: 2px solid #091f40;
+    background-color: transparent;
+    outline: none;
+}
+
+input.contact-form-setting:nth-of-type(even) {
+    margin-left: 4%;
+}
+
+.contact-form-setting[name="subject"] {
+    width: 100%;
+}
+
+.contact-form-setting[name="message"] {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-form-setting::placeholder {
+    color: rgba(108, 117, 125, 0.6);
+}
+
+.contact-pointer {
+    cursor: pointer;
+}
+
+.contact-us-page .col-md-5 {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.contact-list {
+    padding: 4% 1% 1% 15%;
+    background-color: rgba(238, 157, 38, 0.9);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.contact-list {
+    background-image: url(/images/introduction-graphic-white-background.svg);
+    background-size: 51%;
+    background-position: 110% 97%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contact-us-page .contact-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%;
+    color: #091f40;
+    font-weight: 600;
+}
+
+.contact-us-page .contact-list li:hover {
+    color: white;
+}
+
+@media (max-width: 1199px) {
+    .contact-list {
+        padding: 4% 1% 1% 8%;
+    }
+}
+
+@media (max-width: 991px) {
+    .contact-list {
+        padding: 4% 1% 1% 8%;
+    }
+}

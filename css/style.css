@@ -1,0 +1,392 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+/* GLOBAL STYLES
+  --------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+html,
+body {
+  background-color: #F1F1E6;
+}
+
+body {
+  background-image: url(/images/Background-image.jpg);
+  background-size: cover;
+  background-position: 100% 97%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main-section {
+  background-image: url(/images/introduction-graphic-white-background.svg);
+  background-size: 51%;
+  background-position: 110% 97%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Nav Bar
+  -------------------------------------------- */
+.navbar.fixed-top {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-logo img {
+  width: 85px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #091f40;
+  font-weight: 600;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: #ee9d26;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.nav-link {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 70%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 15%;
+  background-color: #ee9d26;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav-item.active .nav-link {
+  font-weight: 800;
+  color: #ee9d26;
+}
+
+.nav-item.dropdown .dropdown-menu {
+  transition: all 0.5s;
+  overflow: hidden;
+  transform-origin: top center;
+  transform: scale(1, 0);
+  display: block;
+  border: 1px solid #091f40;
+  border-radius: 0;
+  padding: 0;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  transform: scale(1);
+}
+
+.nav-item.dropdown .dropdown-menu ul {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.nav-item.dropdown .dropdown-menu ul li strong {
+  color: #ee9d26;
+}
+
+.nav-item.dropdown .dropdown-menu ul li .dropdown-item {
+  color: #091f40;
+}
+
+.nav-item.dropdown .dropdown-menu ul li:nth-child(5){
+  margin-top: 0.5rem;
+}
+
+.nav-item.dropdown .dropdown-menu ul li .dropdown-item:hover {
+  background-color: transparent;
+  background-color: #ee9d26;
+  color: #ffffff;
+}
+
+/* Buttons
+  -------------------------------------------- */
+.btn-primary {
+  color: #091f40;
+  background-color: #ee9d26;
+  border-color: #091f40;
+  border-width: 2px;
+}
+
+.btn-primary:hover {
+  color: #FFFFFF;
+  background-color: #091f40;
+  border-color: #091f40;
+}
+
+.btn {
+  padding: 3px 15px;
+  border-radius: 0px;
+}
+
+.multi-collapse .card-body .btn {
+  margin-top: 1rem;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------- */
+#carousel-slider {
+  position: relative;
+  height: 430px;
+  overflow: hidden;
+  margin-bottom: -30px;
+}
+
+#carousel-slider div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+}
+
+#carousel-slider div img {
+  width: 300px;
+  transition: width 1s;
+  border: 2px solid #091f40;
+  cursor: pointer;
+}
+
+#carousel-slider div.prev {
+  z-index: 5;
+  left: 27.5%;
+  transform: translateY(30%) translateX(-70%);
+}
+
+#carousel-slider div.prev img,
+#carousel-slider div.next img {
+  width: 200px;
+  filter: blur(0.12rem) brightness(85%);
+}
+
+#carousel-slider div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(17px) translateX(-50%);
+  -webkit-box-shadow: 0px 0px 9px 5px rgba(9, 31, 79, 0.9);
+  -moz-box-shadow: 0px 0px 9px 5px rgba(9, 31, 79, 0.9);
+  box-shadow: 0px 0px 9px 5px rgba(9, 31, 79, 0.9);
+}
+
+#carousel-slider div.next {
+  z-index: 5;
+  left: 72.5%;
+  transform: translateY(30%) translateX(-30%);
+}
+
+.carousel-buttons {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -10rem;
+}
+
+.carousel-buttons button:last-of-type {
+  float: right;
+}
+
+.carousel-buttons button {
+  padding: 5px 3px;
+  border: none;
+  background-color: transparent;
+}
+
+.carousel-buttons button .bi {
+  font-size: 24px;
+  margin: 0px;
+}
+
+.side-indicator .nav p span {
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 12px;
+  margin: 0 auto;
+  background-color: #091f40;
+  border-radius: 12px;
+  transition: all 150ms ease-in-out;
+}
+
+.side-indicator .nav p.active span {
+  width: 10px;
+  height: 20px;
+  background-color: #ee9d26;
+}
+
+.side-indicator .nav {
+  position: fixed;
+  top: 50%;
+  right: 15px;
+  width: 18px;
+  transform: translateY(-50%);
+}
+
+.side-indicator .nav p {
+  width: 18px;
+  height: 20px;
+  padding: 14px 0;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* CUSTOMIZE THE CAROUSEL - Click to show card
+  -------------------------------------------- */
+.multi-collapse .card-body {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0;
+  border: 2px solid #091f40;
+}
+
+.multi-collapse .card-body p {
+  margin-bottom: 0;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+.main-section {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.featurette-divider {
+  margin: 5rem 0;
+  /* Space out the Bootstrap <hr> more */
+}
+
+.wrapper-setting {
+  height: 100%;
+  width: 100%;
+  transition: all 1.5s ease;
+}
+
+.wrapper-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  line-height: 1;
+  letter-spacing: -.05rem;
+  font-weight: 600;
+}
+
+/* Font Setting
+------------------------- */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #091f40;
+}
+
+.marketing h1 {
+  font-weight: 700;
+}
+
+div p:last-of-type {
+  margin-bottom: 1.5rem;
+}
+
+.text-yellow {
+  color: #ee9d26;
+}
+
+.text-blue {
+  color: #091f40;
+}
+
+.text-yellow {
+  color: #ee9d26;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.name-introdcution {
+  font-size: 5rem;
+}
+
+.profile-job-title {
+  font-size: 1.73rem;
+  line-height: 0.7rem;
+}
+
+.profile-lead {
+  padding-top: 0.7rem;
+  font-weight: 300;
+}
+
+/* Bootstrap Icon Setting
+-------------------------------------------------- */
+
+.bi {
+  font-size: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-collapse {
+    display: block !important;
+  }
+}
+

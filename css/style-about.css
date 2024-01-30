@@ -1,0 +1,230 @@
+.experience-section {
+    margin-top: 1rem;
+}
+
+.experience-section .col-md-5 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0;
+    border: 2px solid #091f40;
+    padding: 1rem 1.5rem 0;
+}
+
+/* Timeline Carousel Setting
+-------------------------------------------------- */
+.vertical-slider-setting {
+    position: relative;
+    top: 0;
+    width: 100vw;
+    height: 55vh;
+    max-width: 100%;
+    max-height: 100%;
+    background: transparent;
+    overflow: hidden;
+}
+
+.education-section .vertical-slider-setting {
+    height: 100%;
+}
+
+.vertical-slider-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.vertical-slider-slide.side-panel-active {
+    z-index: 10;
+}
+
+.slider-section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.side-panel-active .trans-slider-layer {
+    transform: translateY(0) skew(0) rotate(0) scale(2);
+    transition-delay: 0ms;
+}
+
+.slider-section {
+    transition: all 550ms ease-in-out;
+    transition-delay: 0ms;
+    background-color: rgba(9, 31, 64, 0.65);
+    border-radius: 0;
+}
+
+.side-panel-active .slider-section {
+    transform: translateY(0);
+    transition-delay: 550ms;
+}
+
+.slider-section-content {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+    height: 100%;
+    justify-content: center;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 550ms ease;
+    transition-delay: 0s;
+}
+
+.slider-section-content .accordion-button {
+    color: #091f40;
+}
+
+.slider-section-content .accordion-button:focus,
+.slider-section-content .accordion-button:hover {
+    box-shadow: none;
+}
+
+.slider-section-content .accordion-button:focus {
+    border-color: #091f40;
+}
+
+.slider-section-content .accordion-body {
+    border: 1px solid white;
+    background-color: rgba(9, 31, 64, 0.9);
+}
+
+.slider-section-content li {
+    color: #FFFFFF;
+}
+
+.slider-section-content ul {
+    list-style: square;
+    margin-bottom: 0px;
+}
+
+.side-panel-active .slider-section-content {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 550ms;
+    padding: 3% 4% 3% 5%;
+    max-width: 83%;
+}
+
+.side-pannel {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    z-index: 20;
+}
+
+.side-pannel-adjustment {
+    width: auto;
+    margin: 0.5rem auto;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    color: #6c757d;
+}
+
+div.side-pannel-adjustment  p:last-of-type {
+    margin-bottom: 0.5rem;
+}
+
+.side-pannel-adjustment.active {
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.side-pannel-adjustment.active i {
+    color: #ee9d26;
+}
+
+.slider-section-content p strong {
+    text-transform: uppercase;
+}
+
+.slider-section-content .row {
+    margin-bottom: 1rem;
+}
+
+.slider-section-content .row:last-of-type{
+    margin-bottom: 0;
+}
+
+.education-section {
+    position: relative;
+    top: 0;
+    width: 100vw;
+    height: 55vh;
+    max-width: 100%;
+    max-height: 320px;
+}
+
+.education-section .education-section-content {
+    padding: 3% 4%;
+    max-width: 100%;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    justify-content: center;
+}
+
+@property --eb-progress-value {
+    syntax: "<integer>";
+    inherits: false;
+    initial-value: 0;
+}
+
+@-webkit-keyframes eb-progress {
+    to {
+        --eb-progress-value: var(--value);
+    }
+}
+
+@keyframes eb-progress {
+    to {
+        --eb-progress-value: var(--value);
+    }
+}
+
+.eb-progress-bar {
+    --size: 4.5rem;
+    --inner-bg: #f2f2f2;
+    --primary-color: rgba(255, 255, 255, 0.85);
+    --secondary-color: #091f40;
+    border: 2px solid #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3.5rem;
+    font-size: calc(var(--size) / 5);
+    color: var(--primary-color);
+    background: radial-gradient(closest-side, var(--inner-bg) 1%, transparent 0% 0%), conic-gradient(var(--primary-color) calc(var(--eb-progress-value) * 1%), var(--secondary-color) 0);
+}
+
+.side-panel-active .eb-progress-bar,
+.side-panel-active .eb-progress-bar::before {
+    -webkit-animation: eb-progress 3.5s 1 forwards;
+    animation: eb-progress 3.5s 1 forwards;
+    animation-delay: 0.75s;
+}
+
+.eb-progress-bar::before {
+    counter-reset: percentage var(--eb-progress-value);
+    content: attr(data-name) ' ' counter(percentage) "/100";
+    font-weight: 600;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background: #091f40;
+    padding: 2px 15px;
+    z-index: 1;
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, 0.85);
+}
