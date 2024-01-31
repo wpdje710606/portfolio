@@ -35,10 +35,12 @@
     bottom: 0;
     right: 0;
     margin: auto;
+    opacity: 0;
 }
 
 .vertical-slider-slide.side-panel-active {
     z-index: 10;
+    opacity: 1;
 }
 
 .slider-section {
@@ -59,7 +61,7 @@
 .slider-section {
     transition: all 550ms ease-in-out;
     transition-delay: 0ms;
-    background-color: rgba(9, 31, 64, 0.65);
+    background-color: rgba(9, 31, 64, 0.85);
     border-radius: 0;
 }
 
@@ -81,8 +83,9 @@
     transition-delay: 0s;
 }
 
-.slider-section-content .accordion-button {
+.accordion-flush .accordion-item .accordion-button {
     color: #091f40;
+    padding: 0.5rem 1rem;
 }
 
 .slider-section-content .accordion-button:focus,
