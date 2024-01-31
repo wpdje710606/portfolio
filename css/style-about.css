@@ -135,7 +135,7 @@
     color: #6c757d;
 }
 
-div.side-pannel-adjustment  p:last-of-type {
+div.side-pannel-adjustment p:last-of-type {
     margin-bottom: 0.5rem;
 }
 
@@ -156,7 +156,7 @@ div.side-pannel-adjustment  p:last-of-type {
     margin-bottom: 1rem;
 }
 
-.slider-section-content .row:last-of-type{
+.slider-section-content .row:last-of-type {
     margin-bottom: 0;
 }
 
@@ -230,4 +230,89 @@ div.side-pannel-adjustment  p:last-of-type {
     z-index: 1;
     position: relative;
     border: 2px solid rgba(255, 255, 255, 0.85);
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (max-width: 767px) {
+
+    .side-pannel {
+        top: 1%;
+        left: 5%;
+        transform: translateY(0);
+        z-index: 20;
+    }
+
+    .side-pannel-adjustment {
+        float: left;
+        margin-right: 5%;
+    }
+
+    .side-pannel-adjustment.d-non {
+        margin: 0;
+    }
+
+    .vertical-slider-slide {
+        display: none;
+        position: relative;
+    }
+
+    .vertical-slider-slide.side-panel-active {
+        display: block;
+    }
+
+    .slider-section, .side-pannel {
+        position: relative;
+    }
+
+    .wrapper-section .row {
+        margin: 1rem 0;
+        display: block;
+        max-height: 100%;
+        height: auto;
+    }
+
+    .wrapper-section .col-md-12 {
+        padding: 0;
+    }
+
+    .education-section {
+        max-width: 100%;
+    }
+
+    .slider-section-content,
+    .side-panel-active .slider-section-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 5% 5%;
+    }
+
+    .vertical-slider-setting {
+        height: 100%;
+    }
+
+    div.side-pannel-adjustment p:last-of-type {
+        margin-bottom: 0;
+    }
+
+    #experience-according {
+        margin-bottom: 20px;
+    }
+
+    .side-pannel-adjustment i {
+        margin-right: 5px;
+    }
+
+    .slider-section-content .row {
+        margin: 0px;
+    }
+
+    .slider-section-content .row .col-md-3 {
+        margin-bottom: 10px;
+    }
+
+    #slider-section-1 .slider-section-content .text-end {
+        text-align: left!important;
+    }
 }

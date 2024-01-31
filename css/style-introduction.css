@@ -541,3 +541,25 @@ animation01
 .introduction-graphic-setting {
     width: 50%;
 }
+
+@media (max-width: 767px) {
+    .border_box, .wave {
+        transform: scale(2,2);
+        left: 40%;
+        top: 40%;
+    }
+
+    .wave_wrapper {
+        top: -35%;
+    }
+
+    .name {
+        transform: scale(2.8,2.8);
+        left: 35%;
+        top: 30%;
+    }
+
+    .name p {
+        left: 0;
+    }
+}

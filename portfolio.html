@@ -31,7 +31,7 @@
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
       <div class="container">
         <a class="navbar-brand navbar-logo" href="home"><img alt="Site Logo" src="images/Logo.svg"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -44,8 +44,7 @@
               <a class="nav-link" aria-current="home page" href="home">Home</a>
             </li>
             <li class="nav-item active dropdown dropdown-slide dropdown-hover">
-              <a class="nav-link dropdown-toggle" aria-current="portfolio page" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false" href="portfolio">Portfolio</a>
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" aria-expanded="false" href="portfolio">Portfolio</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <ul>
                   <li><strong>Website Design Projects</strong></li>
@@ -72,7 +71,7 @@
   </header>
 
   <main class="main-section">
-    <div class="side-indicator">
+    <div class="side-indicator d-none d-md-block">
       <div class="nav">
         <p class="nav-dot active" data-number="0"><span></span></p>
         <p class="nav-dot" data-number="-100"><span></span></p>
@@ -85,7 +84,7 @@
       <!-- START THE FEATURETTES -->
 
       <div class="row featurette wrapper-section" id="Introduction-seciton">
-        <div class="col-md-8">
+        <div class="col-md-8 col-sm-12 col-12">
           <h1 class="featurette-heading">Portfolio</h1>
           <h4 class="text-muted">A diverse collection of visually stunning website and print
             designs.</h4>
@@ -102,13 +101,13 @@
             websites and printed materials.</p>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-12 col-12">
           <img src="images/Portfolio-Page-Intro.jpg" alt="Portfolio Page Intro Graphic" width="100%">
         </div>
       </div>
 
       <div class="row featurette wrapper-section collpase-content-setting" id="Website-Design-section">
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-12 col-12">
           <div class="carousle-section">
             <div id="carousel-slider" class="carousel-slider-setting">
               <div class="prev" data-bs-toggle="collapse" data-bs-target="#mobileCheckoutDesign" aria-expanded="false"
@@ -127,7 +126,7 @@
           </div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-12 col-12">
           <h2 class="featurette-heading">Website Design Projects</h2>
           <p>Welcome to my portfolio where you can explore a collection of my projects and work. My primary
             goal is always to deliver excellent results. Feel free to dive into my projects and don't hesitate to reach

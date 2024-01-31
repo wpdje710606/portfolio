@@ -24,5 +24,4 @@ $('.vertical-slider-setting').each(function () {
         $activeSlide = $slider.find('.vertical-slider-slide').eq(slideToGo - 1).addClass('side-panel-active');
         $slider.trigger('slide.changed');
     }
-
 });

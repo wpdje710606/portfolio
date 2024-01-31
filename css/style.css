@@ -35,13 +35,13 @@ body {
   width: 85px;
 }
 
-.navbar-dark .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link {
   color: #091f40;
   font-weight: 600;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link:focus {
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
   color: #ee9d26;
 }
 
@@ -106,7 +106,7 @@ body {
   color: #091f40;
 }
 
-.nav-item.dropdown .dropdown-menu ul li:nth-child(5){
+.nav-item.dropdown .dropdown-menu ul li:nth-child(5) {
   margin-top: 0.5rem;
 }
 
@@ -385,8 +385,101 @@ div p:last-of-type {
 
 
 @media (min-width: 768px) {
+
+  /* Mobile NAV */
   .navbar-expand-md .navbar-collapse {
     display: block !important;
   }
 }
 
+@media (max-width: 767px) {
+  .navbar.fixed-top {
+    background-color: #FFFFFF;
+  }
+
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 1rem;
+  }
+
+  .nav-item.dropdown .dropdown-menu {
+    background-color: transparent;
+    transform: scale(1, 1);
+    border: none;
+  }
+
+  .nav-item.dropdown .dropdown-menu ul {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  /* Mobile Content */
+  .main-section {
+    overflow: scroll;
+  }
+
+  .wrapper-setting {
+    padding-top: 85px;
+  }
+
+  .wrapper-section {
+    display: block;
+    --bs-gutter-x: 0rem;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .wrapper-section:last-of-type {
+    padding-bottom: 20px;
+  }
+
+  #Introduction-seciton .col-sm-12{
+    text-align: center;
+  }
+
+  #Introduction-seciton .col-sm-12 img {
+    width: 60%;
+    max-width: 285px;
+    margin: 0px auto;
+    display: block;
+  }
+
+  .name-introdcution {
+    font-size: 2.5rem;
+  }
+
+  .profile-job-title {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .profile-lead {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .nav-link::after {
+    left: 5%;
+  }
+
+  #carousel-slider div img {
+    width: 200px;
+  }
+
+  #carousel-slider div.prev img,
+  #carousel-slider div.next img {
+    width: 130px;
+  }
+
+  #carousel-slider div.next {
+    transform: translateY(40%) translateX(-30%);
+  }
+
+  #carousel-slider div.prev {
+    transform: translateY(40%)  translateX(-70%);
+  }
+
+  #carousel-slider {
+    height: 310px;
+    margin-bottom: 0;
+  }
+}

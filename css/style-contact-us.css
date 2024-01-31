@@ -79,3 +79,38 @@ input.contact-form-setting:nth-of-type(even) {
         padding: 4% 1% 1% 8%;
     }
 }
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (max-width: 767px) {
+
+    .contact-us-page .col-md-5 {
+        height: 100%;
+        margin-top: 10%;
+    }
+
+    .contact-us-page .contact-list li {
+        display: block;
+    }
+
+    .contact-list {
+        background-size: 33%;
+        background-position: 100% 100%;
+        padding: 5% 5% 0;
+    }
+
+    .contact-list .col-md-3, .contact-list .col-md-9 {
+        text-align: left;
+    }
+
+    .contact-list .col-md-3 img {
+        width: 50%;
+        max-width: 200px;
+    }
+
+    .contact-list .col-md-9 ul {
+        padding: 0;
+    }
+
+}

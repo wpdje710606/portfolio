@@ -28,15 +28,18 @@ function scrollEvent(event) {
     }
 }
 
-window.addEventListener("wheel", function (event) {
-    if (scrollFlag === 1) {
-        setTimeout(() => {
-            scrollEvent(event);
-            scrollFlag = 1;
-        }, 250);
-        scrollFlag = 0;
-    }
-});
+if(window.matchMedia('(max-width:767px)').matches) {
+    }else{
+    window.addEventListener("wheel", function (event) {
+        if (scrollFlag === 1) {
+            setTimeout(() => {
+                scrollEvent(event);
+                scrollFlag = 1;
+            }, 250);
+            scrollFlag = 0;
+        }
+    });
+}
 
 
 $(".side-indicator p.nav-dot").on("click", function () {
