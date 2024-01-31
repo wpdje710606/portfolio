@@ -432,10 +432,6 @@ div p:last-of-type {
     padding-bottom: 20px;
   }
 
-  #Introduction-seciton .col-sm-12{
-    text-align: center;
-  }
-
   #Introduction-seciton .col-sm-12 img {
     width: 60%;
     max-width: 285px;
