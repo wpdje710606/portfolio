@@ -1,0 +1,17 @@
+.small-color-box {
+    width: 10px;
+    height: 11px;
+    border: 1px solid #FFFFFF;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.case-study-pages .vertical-slider-setting {
+    height: 350px;
+}
+
+@media (max-width: 979px) {
+    .case-study-pages .vertical-slider-setting {
+        height: 100%;
+    }
+}

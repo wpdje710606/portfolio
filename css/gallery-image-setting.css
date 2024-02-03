@@ -1,0 +1,118 @@
+:root {
+    --bg: #091f40;
+    --white: #FFFFFF;
+    --yellow: #ee9d26;
+}
+
+.galler-image-section {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    max-height: 350px;
+}
+
+.gallery-setting li {
+    list-style: none;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    margin: 0 -10% 0 -5%;
+}
+
+.gallery-setting li:first-of-type {
+    clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+    margin: 0 -10% 0 0;
+}
+
+.gallery-setting li:last-of-type {
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    margin: 0 0 0 -5%;
+}
+
+.gallery-setting {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-setting-image {
+    width: 100% !important;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+.gallery-setting-title {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 40%;
+    right: 50%;
+    color: var(--white);
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+    text-transform: Uppercase;
+}
+
+.gallery-setting li:first-of-type .gallery-setting-title {
+    bottom: 40%;
+    right: 70%;
+}
+
+.gallery-setting li:last-of-type .gallery-setting-title {
+    right: 30%;
+}
+
+.gallery-setting-title::after {
+    margin-top: 0.3em;
+}
+
+.gallery-setting-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(15, 15, 15, 0) 0%, rgba(15, 15, 15, 50%) 100%);
+    opacity: 1;
+    transition: opacity 0.4s ease-out;
+    cursor: pointer;
+}
+
+.gallery-setting-item {
+    position: relative;
+    flex-grow: 1;
+    width: 100px;
+    height: 100%;
+    background: var(--bg);
+    transition: flex-grow 1s ease;
+    overflow: hidden;
+}
+
+.gallery-setting-item:hover {
+    flex-grow: 2;
+}
+
+.gallery-setting-item:hover .gallery-setting-overlay {
+    opacity: 0.5;
+}
+
+.gallery-setting-item:hover .gallery-setting-title {
+    color: var(--yellow);
+}
+
+.gallery-setting-item:hover .gallery-setting-image {
+    transform: scale(1.1);
+}
+
+@media (max-width: 979px) {
+    .galler-image-section {
+        height: 30vh;
+    }
+}

@@ -543,6 +543,10 @@ animation01
 }
 
 @media (max-width: 767px) {
+    .introduction-section {
+        background-position: 100% 50%;
+    }
+
     .border_box, .wave {
         transform: scale(2,2);
         left: 40%;
@@ -561,5 +565,32 @@ animation01
 
     .name p {
         left: 0;
+        font-size: 1.7vw;
+    }
+
+    .name p span {
+        font-weight: 700;
+    }
+    
+    .introduction-graphic-setting {
+        width: 70%;
+        max-width: 250px;
+    }
+
+    @keyframes rotateWordsSecond {
+        0% {
+            opacity: 1;
+            width: 0%;
+        }
+    
+        14% {
+            opacity: 1;
+            width: 100vw;
+        }
+    
+        14.1% {
+            opacity: 0;
+            width: 0%;
+        }
     }
 }

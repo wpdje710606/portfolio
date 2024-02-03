@@ -1,0 +1,29 @@
+$('.gallery-setting-overlay').on( "click", function() {
+    console.log('testing A');
+    var src = $(this).parent('.gallery-setting-item').find('.gallery-setting-image').attr('src');
+    var modal;
+
+    function removeModal() {
+        modal.remove();
+        $('body').off('keyup.modal-close');
+    }
+    modal = $('<div>').css({
+        background: 'RGBA(0,0,0,.8) url(' + src + ') no-repeat center',
+        backgroundSize: '70vw',
+        width: '100%',
+        height: '100%',
+        position: 'fixed',
+        zIndex: '10000',
+        top: '0',
+        left: '0',
+        cursor: 'zoom-out'
+    }).click(function () {
+        removeModal();
+    }).appendTo('body');
+    //handling ESC
+    $('body').on('keyup.modal-close', function (e) {
+        if (e.key === 'Escape') {
+            removeModal();
+        }
+    });
+});
