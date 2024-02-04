@@ -7,7 +7,7 @@
 .galler-image-section {
     margin: 0;
     width: 100%;
-    height: 100vh;
+    height: 13vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,17 +17,17 @@
 
 .gallery-setting li {
     list-style: none;
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-    margin: 0 -10% 0 -5%;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    margin: 0 -5% 0 -5%;
 }
 
 .gallery-setting li:first-of-type {
-    clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
-    margin: 0 -10% 0 0;
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+    margin: 0 -5% 0 0;
 }
 
 .gallery-setting li:last-of-type {
-    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
     margin: 0 0 0 -5%;
 }
 
