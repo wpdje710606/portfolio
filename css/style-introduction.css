@@ -439,95 +439,21 @@ animation01
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 30vw;
+    width: auto;
     height: 30vw;
-    animation: name 1.0s cubic-bezier(0.165, 0.84, 0.44, 1) 3s forwards;
-    opacity: 0;
+    width: 60vw;
     text-align: left;
 }
 
 .name p {
     position: absolute;
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     color: #FFFFFF;
-    font-size: 1.5vw;
+    font-size: 2rem;
     letter-spacing: 0.1em;
-}
-
-.name p span {
-    font-weight: 500;
-    text-align: center;
-}
-
-@keyframes name {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.words span {
-    animation: rotateWordsSecond 22s ease-in-out 0s;
-    position: absolute;
-    white-space: nowrap;
-    opacity: 0;
-    overflow: hidden;
-    max-width: 30vw;
-    text-overflow: ellipsis;
-}
-
-.words2 {
-    white-space: nowrap;
-    color: #fff;
-}
-
-.words span:nth-child(1) {
-    animation-delay: 1.5s;
-}
-
-.words span:nth-child(2) {
-    animation-delay: 4.5s;
-}
-
-.words span:nth-child(3) {
-    animation-delay: 7.5s;
-}
-
-.words span:nth-child(4) {
-    animation-delay: 10.5s;
-}
-
-.words span:nth-child(5) {
-    animation-delay: 13.5s;
-}
-
-.words span:nth-child(6) {
-    animation-delay: 16.5s;
-}
-
-.words span:nth-child(7) {
-    animation-delay: 19.5s;
-}
-
-@keyframes rotateWordsSecond {
-    0% {
-        opacity: 1;
-        width: 0%;
-    }
-
-    14% {
-        opacity: 1;
-        width: 30vw;
-    }
-
-    14.1% {
-        opacity: 0;
-        width: 0%;
-    }
+    font-weight: 600;
 }
 
 .introduction-graphic-setting {
@@ -553,39 +479,11 @@ animation01
     }
 
     .name {
-        transform: scale(2.8,2.8);
-        left: 35%;
-        top: 30%;
+        height: 75vw;
+        width: 70vw;
     }
-
+    
     .name p {
-        left: 0;
-        font-size: 1.7vw;
-    }
-
-    .name p span {
-        font-weight: 700;
-    }
-    
-    .introduction-graphic-setting {
-        width: 70%;
-        max-width: 250px;
-    }
-
-    @keyframes rotateWordsSecond {
-        0% {
-            opacity: 1;
-            width: 0%;
-        }
-    
-        14% {
-            opacity: 1;
-            width: 100vw;
-        }
-    
-        14.1% {
-            opacity: 0;
-            width: 0%;
-        }
+        font-size: 1.5rem;
     }
 }

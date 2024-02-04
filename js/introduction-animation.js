@@ -4,15 +4,16 @@ const headerSection = document.querySelector('.header-section');
 const mainSection = document.querySelector('.main-section');
 const introductionSection = document.querySelector('.introduction-section');
 
-// Wait 22 seconds and then remove the words element and display the image
+// remove the words element and display the image
 setTimeout(() => {
   words.parentNode.removeChild(words);
-  const img = document.createElement('img');
-  img.src = 'images/introduction-graphic-white.svg';
-  img.alt = 'Introduction Graphic';
-  img.classList.add('introduction-graphic-setting');
+  const object = document.createElement('object');
+  object.data = 'images/introduction-graphic-white.svg';
+  object.alt = 'Introduction Graphic';
+  object.type = 'image/svg+xml';
+  object.classList.add('introduction-graphic-setting');
   const animation02 = document.querySelector('.name');
-  animation02.appendChild(img);
+  animation02.appendChild(object);
   setTimeout(function () {
     function fadeOut(el) {
       var opacity = 1; // Initial opacity
@@ -27,7 +28,7 @@ setTimeout(() => {
       }, 50);
     }
     fadeOut(introductionSection);
-  }, 2200);
+  }, 4000);
   setTimeout(function () {
     function fadeIn(el) {
       var opacity = 0; // Initial opacity
@@ -47,5 +48,53 @@ setTimeout(() => {
     }
     fadeIn(headerSection);
     fadeIn(mainSection);
-  }, 2500);
-}, 21500);
+  }, 4500);
+}, 18700);
+
+setTimeout(() => {
+  var introWords = ['Hellow!', 'I am a Graphic Designer', 'A Website Designer', 'A UX/UI Designer', 'I am..'],
+    part,
+    i = 0,
+    offset = 0,
+    len = introWords.length,
+    forwards = true,
+    skip_count = 0,
+    skip_delay = 15,
+    speed = 72;
+  var wordflick = function () {
+    setInterval(function () {
+      if (forwards) {
+        if (offset >= introWords[i].length) {
+          ++skip_count;
+          if (skip_count == skip_delay) {
+            forwards = false;
+            skip_count = 0;
+          }
+        }
+      }
+      else {
+        if (offset == 0) {
+          forwards = true;
+          i++;
+          offset = 0;
+          if (i >= len) {
+            i = 0;
+          }
+        }
+      }
+      part = introWords[i].substr(0, offset);
+      if (skip_count == 0) {
+        if (forwards) {
+          offset++;
+        }
+        else {
+          offset--;
+        }
+      }
+      $('.words').text(part);
+    }, speed);
+  };
+
+
+  wordflick();
+}, 3500);
