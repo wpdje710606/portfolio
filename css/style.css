@@ -12,7 +12,7 @@ body {
 body {
   background-image: url('../images/Background-image.jpg');
   background-size: cover;
-  background-position: 100% 97%;
+  background-position: 40% 97%;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -412,6 +412,9 @@ div p:last-of-type {
     padding-bottom: 0;
   }
 
+}
+
+@media (max-width: 991px) {
   /* Mobile Content */
   .main-section {
     overflow: scroll;

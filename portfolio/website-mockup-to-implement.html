@@ -15,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,63 +34,11 @@
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-md navbar-light fixed-top">
-            <div class="container">
-                <a class="navbar-brand navbar-logo" href="../home"><img alt="Site Logo"
-                        src="../images/Logo.svg"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav mr-auto mb-2 mb-md-0 justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="home page" href="../home">Home</a>
-                        </li>
-                        <li class="nav-item active dropdown dropdown-slide dropdown-hover">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
-                                aria-expanded="false" href="../portfolio">Portfolio</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <ul>
-                                    <li><strong>Website Design Projects</strong></li>
-                                    <li><a class="dropdown-item"
-                                            href="https://weientseng.wixsite.com/weientseng/copy-of-homepage-1"
-                                            target="_blank">Mobile Checkout Page</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="../portfolio/website-mockup-to-implement">Website End to End</a>
-                                    </li>
-                                    <li><a class="dropdown-item"
-                                            href="https://weientseng.wixsite.com/weientseng/copy-of-product-page"
-                                            target="_blank">Page Template</a></li>
-                                    <li><strong>Printing Design Projects</strong></li>
-                                    <li><a class="dropdown-item"
-                                            href="https://weientseng.wixsite.com/weientseng/megazine"
-                                            target="_blank">Megazine Design</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="https://weientseng.wixsite.com/weientseng/copy-of-poster"
-                                            target="_blank">Booklet Design</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="https://weientseng.wixsite.com/weientseng/copy-of-branding"
-                                            target="_blank">Tri Folding Brochure</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="about me page" href="../about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="contact page" href="../contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <header id="nav-section">
     </header>
 
     <main class="main-section">
-        <div class="side-indicator d-none d-md-block">
+        <div class="side-indicator d-none d-lg-block">
             <div class="nav">
                 <p class="nav-dot active" data-number="0"><span></span></p>
                 <p class="nav-dot" data-number="-100"><span></span></p>
@@ -113,15 +61,16 @@
                     <div class="galler-image-section">
                         <ul class="gallery-setting">
                             <li class="gallery-setting-item"> <img class="gallery-setting-image"
-                                    src="../images/Case-Study-HomePage-top.jpg" alt="Case Study HomePage Top Graphic"/>
+                                    src="../images/Case-Study-HomePage-top.jpg" alt="Case Study HomePage Top Graphic" />
                                 <div class="gallery-setting-overlay"></div>
                             </li>
                             <li class="gallery-setting-item"> <img class="gallery-setting-image"
-                                    src="../images/Case-Study-HomePage-bottom.jpg" alt="Case Study HomePage Bottom Graphic"/>
+                                    src="../images/Case-Study-HomePage-bottom.jpg"
+                                    alt="Case Study HomePage Bottom Graphic" />
                                 <div class="gallery-setting-overlay"></div>
                             </li>
                             <li class="gallery-setting-item"> <img class="gallery-setting-image"
-                                    src="../images/Case-Study-Partner-Page.jpg" alt="Case Study Partner Page Graphic"/>
+                                    src="../images/Case-Study-Partner-Page.jpg" alt="Case Study Partner Page Graphic" />
                                 <div class="gallery-setting-overlay"></div>
                             </li>
                         </ul>
@@ -137,12 +86,12 @@
                         Overall, this project taught me the importance of careful planning, attention to detail, and a
                         user-centered approach to web development.</p>
 
-                    <div class="mouse-scroll-animation">
+                    <div class="mouse-scroll-animation d-none d-lg-block">
                         <span class="down-arrow-1"></span>
                         <span class="down-arrow-2"></span>
                         <span class="down-arrow-3"></span>
                     </div>
-                    <p><strong>Scroll Down to see More Detail!</strong></p>
+                    <p class="d-none d-lg-block"><strong>Scroll Down to see More Detail!</strong></p>
                 </div>
             </div>
 
@@ -154,15 +103,15 @@
                             <div class="galler-image-section">
                                 <ul class="gallery-setting">
                                     <li class="gallery-setting-item"> <img class="gallery-setting-image"
-                                            src="../images/Case-Study-Logo.jpg" alt="Case Study Logo"/>
+                                            src="../images/Case-Study-Logo.jpg" alt="Case Study Logo" />
                                         <div class="gallery-setting-overlay"></div>
                                     </li>
                                     <li class="gallery-setting-item"> <img class="gallery-setting-image"
-                                            src="../images/Case-Study-Site-Style.jpg" alt="Case Study Stie Style"/>
+                                            src="../images/Case-Study-Site-Style.jpg" alt="Case Study Stie Style" />
                                         <div class="gallery-setting-overlay"></div>
                                     </li>
                                     <li class="gallery-setting-item"> <img class="gallery-setting-image"
-                                            src="../images/Case-Study-NAV.jpg" alt="Case Study Navigation"/>
+                                            src="../images/Case-Study-NAV.jpg" alt="Case Study Navigation" />
                                         <div class="gallery-setting-overlay"></div>
                                     </li>
                                 </ul>
@@ -251,27 +200,29 @@
 
             <div class="row featurette wrapper-section collpase-content-setting" id="Major-Elements">
                 <div class="col-md-12">
-                    <h2 class="featurette-heading"><i
-                            class="bi bi-file-earmark-fill"></i></span>HomePage, Product, Category and Checkout</h2>
+                    <h2 class="featurette-heading"><i class="bi bi-file-earmark-fill"></i></span>HomePage, Product,
+                        Category and Checkout</h2>
 
                     <div class="row experience-section">
                         <div class="col-md-12">
                             <div class="galler-image-section">
                                 <ul class="gallery-setting">
                                     <li class="gallery-setting-item"> <img class="gallery-setting-image"
-                                            src="../images/Case-Study-HomePage-Middle.jpg" alt="Case Study HomePage Design"/>
+                                            src="../images/Case-Study-HomePage-Middle.jpg"
+                                            alt="Case Study HomePage Design" />
                                         <div class="gallery-setting-overlay"></div>
                                     </li>
                                     <li class="gallery-setting-item"> <img class="gallery-setting-image"
-                                            src="../images/Case-Study-Product-Page.jpg" alt="Case Study Product Page"/>
+                                            src="../images/Case-Study-Product-Page.jpg" alt="Case Study Product Page" />
                                         <div class="gallery-setting-overlay"></div>
                                     </li>
                                     <li class="gallery-setting-item"> <img class="gallery-setting-image"
-                                            src="../images/Case-Study-Category-Page.jpg" alt="Case Study Category Page"/>
+                                            src="../images/Case-Study-Category-Page.jpg"
+                                            alt="Case Study Category Page" />
                                         <div class="gallery-setting-overlay"></div>
                                     </li>
                                     <li class="gallery-setting-item"> <img class="gallery-setting-image"
-                                            src="../images/Case-Study-Cart-Page.jpg" alt="Case Study Checkout Page"/>
+                                            src="../images/Case-Study-Cart-Page.jpg" alt="Case Study Checkout Page" />
                                         <div class="gallery-setting-overlay"></div>
                                     </li>
                                 </ul>
@@ -392,15 +343,17 @@
                             <div class="galler-image-section">
                                 <ul class="gallery-setting">
                                     <li class="gallery-setting-item"> <img class="gallery-setting-image"
-                                            src="../images/Case-Study-Mobile-NAV.jpg" alt="Case Study Mobile Page Top"/>
+                                            src="../images/Case-Study-Mobile-NAV.jpg"
+                                            alt="Case Study Mobile Page Top" />
                                         <div class="gallery-setting-overlay"></div>
                                     </li>
                                     <li class="gallery-setting-item"> <img class="gallery-setting-image"
-                                            src="../images/Case-Study-Mobile-Footer.jpg" alt="Case Study Mobile Page Bottom"/>
+                                            src="../images/Case-Study-Mobile-Footer.jpg"
+                                            alt="Case Study Mobile Page Bottom" />
                                         <div class="gallery-setting-overlay"></div>
                                     </li>
                                     <li class="gallery-setting-item"> <img class="gallery-setting-image"
-                                            src="../images/Case-Study-Language.jpg" alt="Case Study Language"/>
+                                            src="../images/Case-Study-Language.jpg" alt="Case Study Language" />
                                         <div class="gallery-setting-overlay"></div>
                                     </li>
                                 </ul>
@@ -457,22 +410,24 @@
 
             <div class="row featurette wrapper-section collpase-content-setting" id="Final-Adjustment">
                 <div class="col-md-12">
-                    <h2 class="featurette-heading"><i
-                            class="bi bi-rocket-takeoff-fill"></i></span>Execution and Result</h2>
+                    <h2 class="featurette-heading"><i class="bi bi-rocket-takeoff-fill"></i></span>Execution and Result
+                    </h2>
                     <div class="row experience-section">
                         <div class="col-md-12">
                             <div class="galler-image-section">
                                 <ul class="gallery-setting">
                                     <li class="gallery-setting-item"> <img class="gallery-setting-image"
-                                            src="../images/Case-Study-Bottom-Pricing-Box.jpg" alt="Case Study Pricing Box">
+                                            src="../images/Case-Study-Bottom-Pricing-Box.jpg"
+                                            alt="Case Study Pricing Box">
                                         <div class="gallery-setting-overlay"></div>
                                     </li>
                                     <li class="gallery-setting-item"> <img class="gallery-setting-image"
-                                            src="../images/Case-Study-Checkout-Address.jpg" alt="Case Study ChceckOut Address"/>
+                                            src="../images/Case-Study-Checkout-Address.jpg"
+                                            alt="Case Study ChceckOut Address" />
                                         <div class="gallery-setting-overlay"></div>
                                     </li>
                                     <li class="gallery-setting-item"> <img class="gallery-setting-image"
-                                            src="../images/Case-Study-HomePage-Middle.jpg" alt="Case Study HOMEPAGE"/>
+                                            src="../images/Case-Study-HomePage-Middle.jpg" alt="Case Study HOMEPAGE" />
                                         <div class="gallery-setting-overlay"></div>
                                     </li>
                                 </ul>
@@ -530,10 +485,18 @@
         </div><!-- /.container -->
 
     </main>
-</body>
 
-<script src="../js/timeline-slider.js"></script>
-<script src="../js/scrolling-section.js"></script>
-<script src="../js/img-click-to-modal.js"></script>
+    <!-- Repeat Elements -->
+    <script>
+        $.get("../elements/nav.html", function (data) {
+            $("header").append(data);
+        });
+    </script>
+
+    <script src="../js/timeline-slider.js"></script>
+    <script src="../js/scrolling-section.js"></script>
+    <script src="../js/img-click-to-modal.js"></script>
+
+</body>
 
 </html>

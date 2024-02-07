@@ -166,7 +166,7 @@ div.side-pannel-adjustment p:last-of-type {
     width: 100vw;
     height: 55vh;
     max-width: 100%;
-    max-height: 320px;
+    max-height: 450px;
 }
 
 .education-section .education-section-content {
@@ -221,7 +221,7 @@ div.side-pannel-adjustment p:last-of-type {
 
 .eb-progress-bar::before {
     counter-reset: percentage var(--eb-progress-value);
-    content: attr(data-name) ' ' counter(percentage) "/100";
+    content: attr(data-name) ' ' counter(percentage) ;
     font-weight: 600;
     font-size: 1rem;
     color: #FFFFFF;
@@ -235,7 +235,7 @@ div.side-pannel-adjustment p:last-of-type {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
 
     .side-pannel {
         top: 1%;
@@ -308,7 +308,7 @@ div.side-pannel-adjustment p:last-of-type {
         margin: 0px;
     }
 
-    .slider-section-content .row .col-md-3 {
+    .slider-section-content .row .col-md-12 {
         margin-bottom: 10px;
     }
 

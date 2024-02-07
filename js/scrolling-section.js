@@ -28,7 +28,7 @@ function scrollEvent(event) {
     }
 }
 
-if(window.matchMedia('(max-width:767px)').matches) {
+if(window.matchMedia('(max-width:991px)').matches) {
     }else{
     window.addEventListener("wheel", function (event) {
         if (scrollFlag === 1) {

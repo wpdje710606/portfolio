@@ -32,7 +32,7 @@ input.contact-form-setting:nth-of-type(even) {
     cursor: pointer;
 }
 
-.contact-us-page .col-md-5 {
+.contact-us-page .col-lg-5 {
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -83,9 +83,9 @@ input.contact-form-setting:nth-of-type(even) {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
 
-    .contact-us-page .col-md-5 {
+    .contact-us-page .col-md-12 {
         height: 100%;
         margin-top: 10%;
     }
