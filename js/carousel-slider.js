@@ -35,22 +35,6 @@ function moveToSelected(element) {
   }
 }
 
-$(document).keydown(function (e) {
-  var parent = $(".carousel-slider-setting");
-  switch (e.which) {
-    case 37: // left
-      moveToSelected('prev');
-      break;
-
-    case 39: // right
-      moveToSelected('next');
-      break;
-
-    default: return;
-  }
-  e.preventDefault();
-});
-
 $('.carousel-slider-setting div').click(function () {
   moveToSelected($(this));
 });
