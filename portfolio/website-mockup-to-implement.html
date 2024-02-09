@@ -29,10 +29,11 @@
     <link rel="stylesheet" href="../css/scroll-animation.css">
     <link rel="stylesheet" href="../css/style-case-study.css">
     <link rel="stylesheet" href="../css/gallery-image-setting.css">
+    <link rel="stylesheet" href="../css/page-transition-animation.css">
 
 </head>
 
-<body>
+<body class="page-transition-setting page-transition-action">
 
     <header id="nav-section">
     </header>
@@ -485,17 +486,14 @@
         </div><!-- /.container -->
 
     </main>
-
-    <!-- Repeat Elements -->
-    <script>
-        $.get("../elements/nav.html", function (data) {
-            $("header").append(data);
-        });
-    </script>
+    <div class="page-transition-loading-animate"></div>
+    <div class="page-transition-loading-bar"></div>
+    
 
     <script src="../js/timeline-slider.js"></script>
     <script src="../js/scrolling-section.js"></script>
     <script src="../js/img-click-to-modal.js"></script>
+    <script src="../js/page-transtition.js"></script>
 
 </body>
 

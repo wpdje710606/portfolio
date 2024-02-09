@@ -26,9 +26,10 @@
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style-introduction.css">
+  <link rel="stylesheet" href="css/page-transition-animation.css">
 </head>
 
-<body>
+<body class="page-transition-setting">
   <div class="introduction-section">
     <div class="animation01">
       <div class="rhombus_small">
@@ -101,18 +102,15 @@
     </div><!-- /.container -->
 
   </main>
-
-  <!-- Repeat Elements -->
-  <script>
-    $.get("../elements/nav.html", function (data) {
-      $("header").append(data);
-    });
-  </script>
+  
+  <div class="page-transition-loading-animate"></div>
+  <div class="page-transition-loading-bar"></div>
 
   <script src="js/introduction-animation.js"></script>
   <script src="js/carousel-slider.js"></script>
   <script src="js/scrolling-section.js"></script>
-  <script src="js/collapse-control-setting.js"></script>
+  <script src="js/collapse-control-setting.js"></script>  
+  <script src="js/page-transtition.js"></script>
 
 </body>
 
