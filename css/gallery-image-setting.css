@@ -1,105 +1,56 @@
-:root {
-    --bg: #091f40;
-    --white: #FFFFFF;
-    --yellow: #ee9d26;
+.gallery-split-setting {
+    --g: 2px;
+    --s: 400px;
+    display: grid;
+    margin-top: 20px;
+    background-color: rgba(9, 31, 64, 0.85);
+    border: 5px solid rgba(9, 31, 64, 0.85);
 }
 
-.galler-image-section {
-    margin: 0;
+.gallery-split-setting>img {
+    grid-area: 1/1;
     width: 100%;
-    height: 13vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--bg);
-    max-height: 350px;
-}
-
-.gallery-setting li {
-    list-style: none;
-    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-    margin: 0 -5% 0 -5%;
-    transition: all 0.5s ease;
-}
-
-.gallery-setting li:first-of-type {
-    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-    margin: 0 -5% 0 0;
-}
-
-.gallery-setting li:last-of-type {
-    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
-    margin: 0 0 0 -5%;
-}
-
-.gallery-setting li:hover {
-    clip-path: polygon(85% 0%, 100% 50%, 85% 100%, 0% 100%, 15% 50%, 0% 0%);
-}
-
-.gallery-setting li:hover:first-of-type {
-    clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
-}
-
-.gallery-setting li:hover:last-of-type {
-    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 15% 50%, 0% 0%);
-}
-
-.gallery-setting {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.gallery-setting-image {
-    width: 100% !important;
-    height: 100%;
+    aspect-ratio: 1;
     object-fit: cover;
-    object-position: center;
-    transition: transform 0.3s ease;
-}
-
-.gallery-setting li:first-of-type .gallery-setting-title {
-    bottom: 40%;
-    right: 70%;
-}
-
-.gallery-setting li:last-of-type .gallery-setting-title {
-    right: 30%;
-}
-
-.gallery-setting-title::after {
-    margin-top: 0.3em;
-}
-
-.gallery-setting-overlay {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(15, 15, 15, 0) 0%, rgba(15, 15, 15, 65%) 100%);
-    opacity: 1;
-    transition: opacity 0.4s ease-out;
+    border-radius: 0%;
+    transform: translate(var(--_x, 0), var(--_y, 0));
     cursor: pointer;
+    z-index: 0;
+    transition: .3s, z-index 0s .3s;
 }
 
-.gallery-setting-item {
-    position: relative;
-    flex-grow: 1;
-    width: 100px;
-    height: 100%;
-    background: var(--bg);
-    transition: flex-grow 1s ease;
-    overflow: hidden;
+.gallery-split-setting img:hover {
+    --_i: 1;
+    z-index: 1;
+    transition: transform .2s, clip-path .3s .2s, z-index 0s;
 }
 
-.gallery-setting-item:hover {
-    flex-grow: 2;
+.gallery-split-setting:has(img:hover) {
+    border-width: 3px;
 }
 
-.gallery-setting-item:hover .gallery-setting-overlay {
-    opacity: 0.5;
+.gallery-split-setting:hover img {
+    transform: translate(0, 0);
+}
+
+.gallery-split-setting>img:nth-child(1) {
+    clip-path: polygon(50% 50%, calc(50%*var(--_i, 0)) calc(120%*var(--_i, 0)), 0 calc(100%*var(--_i, 0)), 0 0, 100% 0, 100% calc(100%*var(--_i, 0)), calc(100% - 50%*var(--_i, 0)) calc(120%*var(--_i, 0)));
+    --_y: calc(-1*var(--g))
+}
+
+.gallery-split-setting>img:nth-child(2) {
+    clip-path: polygon(50% 50%, calc(100% - 120%*var(--_i, 0)) calc(50%*var(--_i, 0)), calc(100% - 100%*var(--_i, 0)) 0, 100% 0, 100% 100%, calc(100% - 100%*var(--_i, 0)) 100%, calc(100% - 120%*var(--_i, 0)) calc(100% - 50%*var(--_i, 0)));
+    --_x: var(--g)
+}
+
+.gallery-split-setting>img:nth-child(3) {
+    clip-path: polygon(50% 50%, calc(100% - 50%*var(--_i, 0)) calc(100% - 120%*var(--_i, 0)), 100% calc(100% - 120%*var(--_i, 0)), 100% 100%, 0 100%, 0 calc(100% - 100%*var(--_i, 0)), calc(50%*var(--_i, 0)) calc(100% - 120%*var(--_i, 0)));
+    --_y: var(--g)
+}
+
+.gallery-split-setting>img:nth-child(4) {
+    clip-path: polygon(50% 50%, calc(120%*var(--_i, 0)) calc(50%*var(--_i, 0)), calc(100%*var(--_i, 0)) 0, 0 0, 0 100%, calc(100%*var(--_i, 0)) 100%, calc(120%*var(--_i, 0)) calc(100% - 50%*var(--_i, 0)));
+    --_x: calc(-1*var(--g))
 }
 
 .gallery-setting-item:hover .gallery-setting-title {
@@ -110,8 +61,81 @@
     transform: scale(1.1);
 }
 
-@media (max-width: 979px) {
-    .galler-image-section {
-        height: 15vh;
+.gallery-container-setting {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.2em;
+    width: 100%;
+    height: 500px;
+    transition: all 400ms;
+    background-color: rgba(9, 31, 64, 0.85);
+    border: 0.2em solid rgba(9, 31, 64, 0.85);
+}
+
+.gallery-container-setting:hover .gallery-box {
+    filter: grayscale(100%) opacity(24%);
+}
+
+.gallery-box {
+    position: relative;
+    background: var(--img) 50% 50%;
+    background-size: cover;
+    transition: all 400ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.gallery-container-setting .gallery-box:hover {
+    filter: grayscale(0%) opacity(100%);
+}
+
+.gallery-container-setting:has(.gallery-box-1:hover) {
+    grid-template-columns: 8fr 0.5fr 0.5fr 0.5fr;
+}
+
+.gallery-container-setting:has(.gallery-box-2:hover) {
+    grid-template-columns: 0.5fr 8fr 0.5fr 0.5fr;
+}
+
+.gallery-container-setting:has(.gallery-box-3:hover) {
+    grid-template-columns: 0.5fr 0.5fr 8fr 0.5fr;
+}
+
+.gallery-container-setting:has(.gallery-box-4:hover) {
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 8fr;
+}
+
+.gallery-box::after {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 20px;
+    font-weight: 600;
+    background: #091f40;
+    color: #FFFFFF;
+    padding: 10px 10px 10px 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    transform: translateY(60px);
+    opacity: 0;
+    transition: all 400ms;
+}
+
+.gallery-box:hover::after {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 400ms;
+}
+
+@media (max-width: 992px) {
+    .gallery-split-setting {
+        background: transparent;
+        border: none;
+    }
+    .gallery-container-setting {
+        height: 300px;
+        overflow: hidden;
     }
 }

@@ -5,7 +5,7 @@ $.get("../elements/nav.html", function (data) {
 $(document).ready(function () {
     if (window.matchMedia('(min-width:991px)').matches) {
         $('body').removeClass('page-transition-action');
-        $(".nav-item a").on("click", function (event) {
+        $("nav a, .button-page-transtition").on("click", function (event) {
             event.preventDefault();
             $('body').addClass('page-transition-action');
             var thePageLink = $(this).attr('href');

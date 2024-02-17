@@ -414,7 +414,7 @@ div p:last-of-type {
 
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   /* Mobile Content */
   .main-section {
     overflow: scroll;
