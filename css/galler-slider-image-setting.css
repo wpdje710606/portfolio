@@ -199,7 +199,7 @@
   }
 
   .buttons-slider-section-settings a {
-    padding: 30vh 0px;
+    padding: 30vh 8px;
   }
 
   .slideSection .slider-graphic-content img {
@@ -209,5 +209,8 @@
 
   .slideSection .slider-content {
     bottom: 3%;
+  }
+  .buttons-slider-section-settings a {
+    --p: 0.3 !important;
   }
 }
