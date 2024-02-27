@@ -22,6 +22,26 @@
   background: url('../images/Print-Rock-Band-Banner-Background.jpg') no-repeat right top/cover;
 }
 
+#canadiantire-booklet {
+  background: url('../images/Print-CanadianTire-Booklet-Layout-Background.jpg') no-repeat right top/cover;
+}
+
+#magazine-sport {
+  background: url('../images/Print-Magazine-Sport-Layout-Background.jpg') no-repeat right top/cover;
+}
+
+#trip-booklet {
+  background: url('../images/Print-Trip-Booklet-Layout-Background.jpg') no-repeat right top/cover;
+}
+
+#restaurant-menu {
+  background: url('../images/Print-Restaurant-Menu-Layout-Background.jpg') no-repeat right top/cover;
+}
+
+#bar-menu {
+  background: url('../images/Print-Bar-Menu-Layout-Background.jpg') no-repeat right top/cover;
+}
+
 .slider-section-setting {
   position: relative;
   overflow: hidden;
