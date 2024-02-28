@@ -42,6 +42,30 @@
   background: url('../images/Print-Bar-Menu-Layout-Background.jpg') no-repeat right top/cover;
 }
 
+#bike-brochure-mockup {
+  background: url('../images/Print-Brochure-BMW-Mockup-Background.jpg') no-repeat right top/cover;
+}
+
+#bike-brochure-inside-one {
+  background: url('../images/Print-Brochure-BMW-Page-One-Background.jpg') no-repeat right top/cover;
+}
+
+#bike-brochure-inside-two {
+  background: url('../images/Print-Brochure-BMW-Page-Two-Background.jpg') no-repeat right top/cover;
+}
+
+#tea-brochure-mokcup {
+  background: url('../images/Print-Brochure-Davids-Mokcup-Background.jpg') no-repeat right top/cover;
+}
+
+#tea-brochure-inside-one {
+  background: url('../images/Print-Brochure-Davids-Page-One-Background.jpg') no-repeat right top/cover;
+}
+
+#tea-brochure-inside-two {
+  background: url('../images/Print-Brochure-Davids-Page-Two-Background.jpg') no-repeat right top/cover;
+}
+
 .slider-section-setting {
   position: relative;
   overflow: hidden;
