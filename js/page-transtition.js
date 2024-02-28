@@ -23,3 +23,21 @@ function performPageTransition(newUrl) {
         }, 600);
     }, 1000);
 }
+
+$(document).ready(function () {
+    console.log("working");
+
+    let gtag = `
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PBDJGC46RS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-PBDJGC46RS');
+    </script>
+    `;
+    console.log(gtag);
+
+    $("head").append(gtag);
+});
