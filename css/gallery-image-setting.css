@@ -2,7 +2,6 @@
     --g: 2px;
     --s: 400px;
     display: grid;
-    margin-top: 20px;
     background-color: rgba(9, 31, 64, 0.85);
     border: 5px solid rgba(9, 31, 64, 0.85);
 }
@@ -10,7 +9,6 @@
 .gallery-split-setting>img {
     grid-area: 1/1;
     width: 100%;
-    aspect-ratio: 1;
     object-fit: cover;
     border-radius: 0%;
     transform: translate(var(--_x, 0), var(--_y, 0));

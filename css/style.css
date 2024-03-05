@@ -454,6 +454,7 @@ div p:last-of-type {
   .profile-lead {
     font-size: 1rem;
     line-height: 1.4rem;
+    padding-top: 0px;
   }
 
   .nav-link::after {
@@ -480,5 +481,11 @@ div p:last-of-type {
   #carousel-slider {
     height: 310px;
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .gallery-split-setting {
+    margin-top: 20px;
   }
 }
