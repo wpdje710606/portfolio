@@ -106,7 +106,7 @@ body {
   color: #091f40;
 }
 
-.nav-item.dropdown .dropdown-menu ul li:nth-child(5) {
+.nav-item.dropdown .dropdown-menu ul .dropdown-item-subtitle-margin-top {
   margin-top: 0.5rem;
 }
 
