@@ -49,10 +49,10 @@ setTimeout(() => {
     fadeIn(headerSection);
     fadeIn(mainSection);
   }, 4500);
-}, 18700);
+}, 9980);
 
 setTimeout(() => {
-  var introWords = ['Hellow!', 'I am a Graphic Designer', 'A Website Designer', 'A UX/UI Designer', 'I am..'],
+  var introWords = ['Welcome to my Portfolio!', 'I am...'],
     part,
     i = 0,
     offset = 0,
@@ -94,7 +94,5 @@ setTimeout(() => {
       $('.words').text(part);
     }, speed);
   };
-
-
   wordflick();
 }, 3500);
