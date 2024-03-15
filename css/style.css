@@ -499,4 +499,9 @@ div p:last-of-type {
   .homepage-button-mobile:last-of-type {
     margin-bottom: 0px;
   }
+
+  .wrapper-setting {
+    margin-top: 85px;
+    padding-top: 0px;
+  }
 }
