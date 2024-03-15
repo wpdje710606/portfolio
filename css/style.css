@@ -489,3 +489,14 @@ div p:last-of-type {
     margin-top: 20px;
   }
 }
+
+@media (max-width: 576px) {
+  .homepage-button-mobile {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .homepage-button-mobile:last-of-type {
+    margin-bottom: 0px;
+  }
+}
