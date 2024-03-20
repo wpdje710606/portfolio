@@ -197,42 +197,121 @@ div.side-pannel-adjustment p:last-of-type {
 
 .eb-progress-bar {
     --size: 4.5rem;
-    --inner-bg: #f2f2f2;
-    --primary-color: rgba(255, 255, 255, 0.85);
+    --inner-bg: rgba(238, 157, 38, 1);
+    --primary-color: rgba(238, 157, 38, 1);
     --secondary-color: #091f40;
     border: 2px solid #FFFFFF;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 3.5rem;
+    width: 88%;
+    height: 3rem;
     font-size: calc(var(--size) / 5);
     color: var(--primary-color);
-    background: radial-gradient(closest-side, var(--inner-bg) 1%, transparent 0% 0%), conic-gradient(var(--primary-color) calc(var(--eb-progress-value) * 1%), var(--secondary-color) 0);
+    background: radial-gradient(closest-side, var(--inner-bg) 0%, transparent 0% 0%), conic-gradient(var(--primary-color) calc(var(--eb-progress-value) * 1%), var(--secondary-color) 0);
 }
 
 .side-panel-active .eb-progress-bar,
-.side-panel-active .eb-progress-bar::before {
-    -webkit-animation: eb-progress 3.5s 1 forwards;
-    animation: eb-progress 3.5s 1 forwards;
-    animation-delay: 0.75s;
+.side-panel-active .eb-progress-bar::after {
+    -webkit-animation: eb-progress 2s 1 forwards;
+    animation: eb-progress 2s 1 forwards;
+    animation-delay: 0.25s;
 }
 
-.eb-progress-bar::before {
+.eb-progress-bar::after {
     counter-reset: percentage var(--eb-progress-value);
-    content: attr(data-name) ' ' counter(percentage) ;
+    content: counter(percentage);
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #FFFFFF;
     background: #091f40;
-    padding: 2px 15px;
+    padding: 5px 7px;
     z-index: 1;
     position: relative;
-    border: 2px solid rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(238, 157, 38, 1);
+    border-radius: 50px;
+}
+
+.skill-list-icon {
+    color: #FFFFFF;
+    font-size: 26px;
+    line-height: 26px;
+    float: left;
+    width: 10%;
+    margin-left: 0;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2%;
+}
+
+.skill-list-icon img {
+    width: 100%;
+}
+
+.flip-setting:hover, .flip-setting:active {
+    transform: rotateY(180deg);
+}
+
+.flip-setting {
+    width: 100%;
+    height: 50px;
+}
+
+.flip-setting {
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.flip-setting .flip-setting-front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.flip-setting .flip-setting-back {
+    transform: rotateY(180deg);
+}
+
+.flip-setting .flip-setting-front,
+.flip-setting .flip-setting-back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    will-change: transform;
+    width: 100%;
+    height: 100%;
+}
+
+.flip-setting .flip-setting-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.flip-setting .flip-setting-back h4 {
+    color: #FFFFFF;
+    margin-bottom: 0px;
 }
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
+
+@media (max-width: 1200px) {
+    .eb-progress-bar {
+        width: 65%;
+    }
+
+    .skill-list-icon {
+        width: 20%;
+        margin-right: 5%;
+    }
+}
 
 @media (max-width: 991px) {
 
@@ -261,7 +340,8 @@ div.side-pannel-adjustment p:last-of-type {
         display: block;
     }
 
-    .slider-section, .side-pannel {
+    .slider-section,
+    .side-pannel {
         position: relative;
     }
 
@@ -312,6 +392,15 @@ div.side-pannel-adjustment p:last-of-type {
     }
 
     #slider-section-1 .slider-section-content .text-end {
-        text-align: left!important;
+        text-align: left !important;
+    }
+
+    .flip-setting-back .skill-list-icon {
+        width: 10%;
+        margin-right: 2%;
+    }
+
+    .skill-list-icon img {
+        max-width: 26px;
     }
 }
