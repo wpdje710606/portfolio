@@ -8,7 +8,7 @@ $('.gallery-container-setting .gallery-box').on( "click", function() {
     }
     modal = $('<div>').css({
         background: 'RGBA(0,0,0,.8) ' + src + ' no-repeat center',
-        backgroundSize: '40vh',
+        backgroundSize: '45vh',
         width: '100%',
         height: '100%',
         position: 'fixed',
@@ -37,7 +37,7 @@ $('.gallery-split-setting img').on( "click", function() {
     }
     modal = $('<div>').css({
         background: 'RGBA(0,0,0,.8) url(' + src + ') no-repeat center',
-        backgroundSize: '40vh',
+        backgroundSize: '45vh',
         width: '100%',
         height: '100%',
         position: 'fixed',
