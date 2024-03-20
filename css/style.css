@@ -370,6 +370,27 @@ div p:last-of-type {
   vertical-align: middle;
 }
 
+/* Icon Setting
+-------------------------------------------------- */
+
+.skill-list-box {
+  margin-bottom: 10px;
+}
+
+.skill-list-box img, .skill-list-box i {
+  width: 40px;
+  background-color: #6c757d;
+  padding: 7px;
+  color: #FFFFFF;
+  margin-right: 3px;
+  margin-bottom: 8px;
+}
+
+.skill-list-box i {
+  padding: 2px 8px;
+  display: inline-block;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -481,6 +502,10 @@ div p:last-of-type {
   #carousel-slider {
     height: 310px;
     margin-bottom: 0;
+  }
+
+  .skill-list-box {
+    width: 100%;
   }
 }
 
