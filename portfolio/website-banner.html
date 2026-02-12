@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tseng Portfolio - Portoflio Showcase Page">
+  <meta name="keywords"
+    content="HTML, CSS, JavaScript, Portfolio, Tseng, Wei En, Web Design, Graphic Design, UX Design">
+  <meta name="author" content="Tseng Wei En">
+  <meta name="generator" content="Hugo 0.72.0">
+  <title>Tseng Portfolio - Print Portfolio</title>
+  <link rel="shortcut icon" href="../images/introduction-graphic-white-background.svg" type="image/x-icon">
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style-about.css">
+  <link rel="stylesheet" href="../css/scroll-animation.css">
+  <link rel="stylesheet" href="../css/style-case-study.css">
+  <link rel="stylesheet" href="../css/page-transition-animation.css">
+  <link rel="stylesheet" href="../css/galler-slider-image-setting.css">
+
+</head>
+
+<style>
+  .mainImage-box {
+    width: 100%;
+    height: 50vh;
+    max-height: 630px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-image {
+    width: 100%;
+    height: auto;
+    max-height: 630px;
+    object-fit: contain;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .thumb-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: center;
+  }
+
+  .thumb-row img {
+    height: 90px;
+    max-width: 11%;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: opacity .2s;
+    object-position: right;
+    flex: 1;
+  }
+
+  .thumb-row img.active-thumb {
+    border: 2px solid #091f40;
+    opacity: 1;
+  }
+
+  .thumb-row img:hover {
+    opacity: .8;
+  }
+
+  .image-present-page .carousel-control-prev {
+    left: 0;
+    width: 4%;
+    float: left;
+  }
+
+  .image-present-page .carousel-control-next {
+    width: 4%;
+    float: right;
+  }
+
+  .image-present-page .carousel-inner {
+    margin: 0px 5%;
+    width: auto;
+  }
+
+  .thumbnail-icon-setting {
+    color: black;
+    font-size: 60px;
+  }
+</style>
+
+<body class="page-transition-setting page-transition-action">
+
+
+  <header id="nav-section">
+  </header>
+
+  <main class="main-section">
+    <div class="side-indicator d-none d-lg-block">
+      <div class="nav">
+        <p class="nav-dot active" data-number="0"><span></span></p>
+        <p class="nav-dot" data-number="-100"><span></span></p>
+        <p class="nav-dot" data-number="-200"><span></span></p>
+        <p class="nav-dot" data-number="-300"><span></span></p>
+        <p class="nav-dot" data-number="-400"><span></span></p>
+      </div>
+    </div>
+
+    <div id="wrapper-setting" class="container marketing wrapper-setting image-present-page">
+      <!-- MAIN IMAGES (all black placeholders) -->
+      <div class="row featurette wrapper-section">
+        <div class="col-md-12 col-sm-12 col-12">
+          <h1 class="featurette-heading d-block d-xl-none">Project: Web Banner and Product Photographic</h1>
+          <h4 class="text-muted d-block d-xl-none">Catching and stunning images.</h4>
+
+          <div class="row">
+            <div class="col-lg-12 col-xl-12 col-sm-12">
+              <h1 class="featurette-heading d-none d-xl-block">Project: Web Banner and Product Photographic</h1>
+              <h4 class="text-muted d-none d-xl-block">Catching and stunning images.</h4>
+              <p class="lead profile-lead">These projects center on crafting visually striking web banners supported by
+                high quality product photography that instantly draws the viewer's eye. By combining bold imagery with
+                clean, purposeful design, the goal is to showcase products in a way that feels both modern and
+                memorable. Each banner is designed to highlight key features through compelling visuals, creating an
+                engaging experience that elevates the brand and leaves a strong impression on the audience.</p>
+
+              <div class="skill-list-box">
+                <img src="../images/Ai-Icon.svg" alt="Illustrator Icon">
+                <img src="../images/Ps-Icon.svg" alt="Photoshop Icon">
+                <i class="bi bi-camera2"></i>
+                <i class="bi bi-camera-video-fill"></i>
+              </div>
+
+              <div class="mouse-scroll-animation d-none d-lg-block">
+                <span class="down-arrow-1"></span>
+                <span class="down-arrow-2"></span>
+                <span class="down-arrow-3"></span>
+              </div>
+              <p class="d-none d-lg-block"><strong>Scroll Down to see More Detail!</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Banner-Fullwidth" class="row featurette wrapper-section collpase-content-setting">
+        <div class="col-md-12">
+          <h2 class="featurette-heading"><i class="bi bi-image-fill"></i></span>Web Banner - Full Width</h2>
+          <p class="lead profile-lead">Here are some example of website banners that I created. The key steps are
+            following:<br />Understand and think through the request; Come out with idea and do the trending research
+            that fit with branding; Decide the concept and what products to use; Research all need elements and taking
+            product pictures.</p>
+          <div class="container"> <!-- MAIN IMAGE -->
+            <div class="text-center mb-3 mainImage-box"> <img src="../images/web-banner/Web-Banner-Full-Width-3.jpg"
+                class="mainImage main-image" alt=""> </div> <!-- THUMBNAIL CAROUSEL -->
+            <div id="thumbCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+              <div class="carousel-inner"> <!-- SLIDE 1 -->
+                <div class="carousel-item active">
+                  <div class="thumb-row"> <img loading="lazy" src="../images/web-banner/Web-Banner-Full-Width-3.jpg"
+                      class="gallery-thumb active-thumb"> <img loading="lazy"
+                      src="../images/web-banner/Web-Banner-Full-Width-1.jpg" class="gallery-thumb"> <img loading="lazy"
+                      src="../images/web-banner/Web-Banner-Full-Width-2.jpg" class="gallery-thumb"> <img loading="lazy"
+                      src="../images/web-banner/Web-Banner-Full-Width-4.jpg" class="gallery-thumb"> <img loading="lazy"
+                      src="../images/web-banner/Web-Banner-Full-Width-5.jpg" class="gallery-thumb"> <img loading="lazy"
+                      src="../images/web-banner/Web-Banner-Full-Width-6.jpg" class="gallery-thumb"> <img loading="lazy"
+                      src="../images/web-banner/Web-Banner-Full-Width-7.jpg" class="gallery-thumb"> <img loading="lazy"
+                      src="../images/web-banner/Web-Banner-Full-Width-8.jpg" class="gallery-thumb"> </div>
+                </div> <!-- SLIDE 2 -->
+                <div class="carousel-item">
+                  <div class="thumb-row"> <img loading="lazy" src="../images/web-banner/Web-Banner-Full-Width-9.jpg"
+                      class="gallery-thumb"> <img loading="lazy" src="../images/web-banner/Web-Banner-Full-Width-10.jpg"
+                      class="gallery-thumb"> <img loading="lazy" src="../images/web-banner/Web-Banner-Full-Width-11.jpg"
+                      class="gallery-thumb"> <img loading="lazy" src="../images/web-banner/Web-Banner-Full-Width-12.jpg"
+                      class="gallery-thumb"> <img loading="lazy" src="../images/web-banner/Web-Banner-Full-Width-13.jpg"
+                      class="gallery-thumb"> <img loading="lazy" src="../images/web-banner/Web-Banner-Full-Width-14.jpg"
+                      class="gallery-thumb"> <img loading="lazy" src="../images/web-banner/Web-Banner-Full-Width-15.jpg"
+                      class="gallery-thumb"> <img loading="lazy" src="../images/web-banner/Web-Banner-Full-Width-16.jpg"
+                      class="gallery-thumb">
+                  </div>
+                </div>
+              </div> <!-- Controls --> <button class="carousel-control-prev" type="button"
+                data-bs-target="#thumbCarousel" data-bs-slide="prev"> <span><i
+                    class="bi bi-chevron-compact-left thumbnail-icon-setting"></i></span>
+              </button> <button class="carousel-control-next" type="button" data-bs-target="#thumbCarousel"
+                data-bs-slide="next"> <span><i class="bi bi-chevron-compact-right thumbnail-icon-setting"></i></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Banner-Element" class="row featurette wrapper-section collpase-content-setting">
+        <div class="col-md-12">
+          <h2 class="featurette-heading"><i class="bi bi-image-fill"></i></span>Web Banner - ELements</h2>
+          <p class="lead profile-lead">Here are some example of website banners that I created. The key steps are
+            following:<br />Based on the website and branding; Follow the content request; Finding the image; Finding the correct products.</p>
+          <div class="container"> <!-- MAIN IMAGE -->
+            <div class="text-center mb-3 mainImage-box"> <img src="../images/web-banner/Web-Banner-Element-3.webp"
+                class="mainImage main-image" alt=""> </div> <!-- THUMBNAIL CAROUSEL -->
+            <div id="thumbCarouselB" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+              <div class="carousel-inner"> <!-- SLIDE 1 -->
+                <div class="carousel-item active">
+                  <div class="thumb-row"> <img loading="lazy" src="../images/web-banner/Web-Banner-Element-3.webp"
+                      class="gallery-thumb active-thumb"> <img loading="lazy" src="../images/web-banner/Web-Banner-Element-1.png"
+                      class="gallery-thumb"> <img loading="lazy" src="../images/web-banner/Web-Banner-Element-2.webp"
+                      class="gallery-thumb"> <img loading="lazy" src="../images/web-banner/Web-Banner-Element-4.webp"
+                      class="gallery-thumb"> <img loading="lazy" src="../images/web-banner/Web-Banner-Element-5.webp"
+                      class="gallery-thumb">
+                  </div>
+                </div> <!-- SLIDE 2 -->
+                <div class="carousel-item">
+                  <div class="thumb-row"> <img loading="lazy" src="../images/web-banner/Web-Banner-Element-6.jpg"
+                      class="gallery-thumb"> <img loading="lazy" src="../images/web-banner/Web-Banner-Element-7.jpg"
+                      class="gallery-thumb"> <img loading="lazy" src="../images/web-banner/Web-Banner-Element-8.jpg"
+                      class="gallery-thumb"> <img loading="lazy" src="../images/web-banner/Web-Banner-Element-9.jpg"
+                      class="gallery-thumb"> <img loading="lazy" src="../images/web-banner/Web-Banner-Element-10.jpg"
+                      class="gallery-thumb">
+                  </div>
+                </div>
+              </div> <!-- Controls --> <button class="carousel-control-prev" type="button"
+                data-bs-target="#thumbCarouselB" data-bs-slide="prev"> <span><i
+                    class="bi bi-chevron-compact-left thumbnail-icon-setting"></i></span>
+              </button> <button class="carousel-control-next" type="button" data-bs-target="#thumbCarouselB"
+                data-bs-slide="next"> <span><i class="bi bi-chevron-compact-right thumbnail-icon-setting"></i></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Ecommerce-Banner" class="row featurette wrapper-section collpase-content-setting">
+        <div class="col-md-12">
+          <h2 class="featurette-heading"><i class="bi bi-image-fill"></i></span>Ecommerce Banner</h2>
+          <p class="lead profile-lead">Here are some example of website banners that I created. The key steps are
+            following:<br />Understand the product; Understand how to present the products; Understand how to posistion the products;</p>
+          <div class="container"> <!-- MAIN IMAGE -->
+            <div class="text-center mb-3 mainImage-box"> <img src="../images/ecommerce-banner/Amazon-Banner-full-width-1.jpg"
+                class="mainImage main-image" alt=""> </div> <!-- THUMBNAIL CAROUSEL -->
+            <div id="thumbCarouselC" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner"> <!-- SLIDE 1 -->
+                <div class="carousel-item active">
+                  <div class="thumb-row"> <img loading="lazy" src="../images/ecommerce-banner/Amazon-Banner-full-width-1.jpg"
+                      class="gallery-thumb active-thumb"> <img loading="lazy"
+                      src="../images/ecommerce-banner/Amazon-Banner-full-width-2.jpg" class="gallery-thumb"> <img loading="lazy"
+                      src="../images/ecommerce-banner/Amazon-Banner-full-width-3.jpg" class="gallery-thumb"> <img loading="lazy"
+                      src="../images/ecommerce-banner/Amazon-Banner-full-width-4.jpg" class="gallery-thumb"> <img loading="lazy"
+                      src="../images/ecommerce-banner/Amazon-Banner-full-width-5.jpg" class="gallery-thumb"> <img loading="lazy"
+                      src="../images/ecommerce-banner/Amazon-Element-Banner-1.jpg" class="gallery-thumb"> <img loading="lazy"
+                      src="../images/ecommerce-banner/Amazon-Element-Banner-2.jpg" class="gallery-thumb"> </div>
+                </div> <!-- SLIDE 2 -->
+                <div class="carousel-item">
+                  <div class="thumb-row"> <img loading="lazy" src="../images/ecommerce-banner/Amazon-Element-Banner-3.jpg"
+                      class="gallery-thumb"> <img loading="lazy" src="../images/ecommerce-banner/Amazon-Element-Banner-4.jpg"
+                      class="gallery-thumb"> <img loading="lazy" src="../images/ecommerce-banner/Amazon-Element-Banner-5.jpg"
+                      class="gallery-thumb"> <img loading="lazy" src="../images/ecommerce-banner/Amazon-Element-Banner-6.jpg"
+                      class="gallery-thumb"> <img loading="lazy" src="../images/ecommerce-banner/Amazon-Element-Banner-7.jpg"
+                      class="gallery-thumb"> <img loading="lazy" src="../images/ecommerce-banner/Amazon-Element-Banner-8.jpg"
+                      class="gallery-thumb"> <img loading="lazy" src="../images/ecommerce-banner/Amazon-Element-Banner-9.jpg"
+                      class="gallery-thumb"> 
+                  </div>
+                </div>
+              </div> <!-- Controls --> <button class="carousel-control-prev" type="button"
+                data-bs-target="#thumbCarouselC" data-bs-slide="prev"> <span><i
+                    class="bi bi-chevron-compact-left thumbnail-icon-setting"></i></span>
+              </button> <button class="carousel-control-next" type="button" data-bs-target="#thumbCarouselC"
+                data-bs-slide="next"> <span><i class="bi bi-chevron-compact-right thumbnail-icon-setting"></i></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Ecommerce-Content" class="row featurette wrapper-section collpase-content-setting">
+        <div class="col-md-12">
+          <h2 class="featurette-heading"><i class="bi bi-image-fill"></i></span>Ecommerce - Content (Amazon A Plus)</h2>
+          <p class="lead profile-lead">Here are some example of website banners that I created. The key steps are
+            following:<br />Understand the product; Researching how other compnay do; Find the right image to work with the product to show here;</p>
+          <div class="container"> <!-- MAIN IMAGE -->
+            <div class="text-center mb-3 mainImage-box"> <img src="../images/ecommerce-banner/Amazon-Prdocut-Content.png"
+                class="mainImage main-image" alt=""> </div> <!-- THUMBNAIL CAROUSEL -->
+            <div id="thumbCarouselD" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner"> <!-- SLIDE 1 -->
+                <div class="carousel-item active">
+                  <div class="thumb-row"> <img loading="lazy" src="../images/ecommerce-banner/Amazon-Prdocut-Content.png"
+                      class="gallery-thumb active-thumb"> <img loading="lazy"
+                      src="../images/ecommerce-banner/Amazon-Prdocut-Content-2.png" class="gallery-thumb"> <img loading="lazy"
+                      src="../images/ecommerce-banner/Amazon-Prdocut-Content-3.png" class="gallery-thumb"> <img loading="lazy"
+                      src="../images/ecommerce-banner/Amazon-Prdocut-Content-4.png" class="gallery-thumb"> <img loading="lazy"
+                      src="../images/ecommerce-banner/Amazon-Prdocut-Content-5.png" class="gallery-thumb"> <img loading="lazy"
+                      src="../images/ecommerce-banner/Amazon-Prdocut-Content-6.png" class="gallery-thumb"> </div>
+                </div> <!-- SLIDE 2 -->
+                <div class="carousel-item">
+                  <div class="thumb-row"> <img loading="lazy" src="../images/ecommerce-banner/Amazon-Prdocut-Content-7.png"
+                      class="gallery-thumb"> <img loading="lazy" src="../images/ecommerce-banner/Amazon-Prdocut-Content-8.png"
+                      class="gallery-thumb"> <img loading="lazy" src="../images/ecommerce-banner/Amazon-Prdocut-Content-9.png"
+                      class="gallery-thumb"> <img loading="lazy" src="../images/ecommerce-banner/Amazon-Prdocut-Content-10.png"
+                      class="gallery-thumb"> <img loading="lazy" src="../images/ecommerce-banner/Amazon-Prdocut-Content-11.png"
+                      class="gallery-thumb"> <img loading="lazy" src="../images/ecommerce-banner/Amazon-Prdocut-Content-12.png"
+                      class="gallery-thumb"> 
+                  </div>
+                </div>
+              </div> <!-- Controls --> <button class="carousel-control-prev" type="button"
+                data-bs-target="#thumbCarouselD" data-bs-slide="prev"> <span><i
+                    class="bi bi-chevron-compact-left thumbnail-icon-setting"></i></span>
+              </button> <button class="carousel-control-next" type="button" data-bs-target="#thumbCarouselD"
+                data-bs-slide="next"> <span><i class="bi bi-chevron-compact-right thumbnail-icon-setting"></i></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.container -->
+
+  </main>
+  <div class="page-transition-loading-animate"></div>
+  <div class="page-transition-loading-bar"></div>
+
+  <script src="../js/timeline-slider.js"></script>
+  <script src="../js/scrolling-section.js"></script>
+  <script src="../js/page-transtition.js"></script>
+  <script>
+    document.addEventListener("click", function (e) { if (e.target.classList.contains("gallery-thumb")) { const thumb = e.target; const container = thumb.closest(".container"); const mainImage = container.querySelector(".mainImage"); mainImage.src = thumb.src; container.querySelectorAll(".gallery-thumb").forEach(img => { img.classList.remove("active-thumb"); }); thumb.classList.add("active-thumb"); } });
+    document.addEventListener("DOMContentLoaded", function () {
+      //Create fullscreen overlay once
+      const fullscreenOverlay = document.createElement("div"); fullscreenOverlay.style.cssText = `
+      position: fixed; inset: 0; background: rgba(0,0,0,0.9); display: none; justify-content: center; align-items: center; z-index: 9999; cursor: zoom-out; `;
+      const fullscreenImg = document.createElement("img"); fullscreenImg.id = "fullscreenImage"; fullscreenImg.style.cssText = `
+      max-width: 95%; max-height: 95%; border-radius: 6px; cursor: default; `;
+      fullscreenOverlay.appendChild(fullscreenImg); document.body.appendChild(fullscreenOverlay);
+
+      // Close fullscreen ONLY when clicking the overlay background
+      fullscreenOverlay.addEventListener("click", function () { fullscreenOverlay.style.display = "none"; });
+
+      // Open fullscreen ONLY when clicking the image
+      document.addEventListener("click", function (e) { if (e.target.classList.contains("mainImage")) { fullscreenImg.src = e.target.src; fullscreenOverlay.style.display = "flex"; } });
+    });
+  </script>
+
+</body>
+
+</html>
