@@ -1,0 +1,79 @@
+.mainImage-box {
+    width: 100%;
+    height: 50vh;
+    max-height: 630px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-image {
+    width: 100%;
+    height: auto;
+    max-height: 630px;
+    object-fit: contain;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .thumb-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: center;
+  }
+
+  .thumb-row img {
+    height: 90px;
+    max-width: 11%;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: opacity .2s;
+    object-position: right;
+    flex: 1;
+  }
+
+  .thumb-row img.active-thumb {
+    border: 2px solid #091f40;
+    opacity: 1;
+  }
+
+  .thumb-row img:hover {
+    opacity: .8;
+  }
+
+  .image-present-page .carousel-control-prev {
+    left: 0;
+    width: 4%;
+    float: left;
+  }
+
+  .image-present-page .carousel-control-next {
+    width: 4%;
+    float: right;
+  }
+
+  .image-present-page .carousel-inner {
+    margin: 0px 5%;
+    width: auto;
+  }
+
+  .thumbnail-icon-setting {
+    color: black;
+    font-size: 60px;
+  }
+  
+  .product-image-section img {
+    background-color: #ffffff;
+    padding: 7px 0px 0px; 
+  }
+
+  .product-image-section .thumb-row img {
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .product-image-section .mainImage-box img {
+    padding: 20px 20px 0px 20px; 
+  }
